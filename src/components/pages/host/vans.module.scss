@@ -1,0 +1,40 @@
+@use "/src/scss/utilities.scss";
+
+.vans {
+  font-size: 1rem;
+  padding: 4rem 0;
+}
+
+.title {
+  margin-bottom: 2rem;
+  font-size: 2em;
+}
+
+.list {
+  @include utilities.reset-list;
+}
+.van {
+  background-color: white;
+  padding: 1.125rem 1.5rem;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.vanImg {
+  width: 15%;
+}
+
+.name {
+  font-size: 1.25em;
+}
+
+.price {
+  @include utilities.font-weight-500;
+  color: rgba(77, 77, 77, 1);
+}

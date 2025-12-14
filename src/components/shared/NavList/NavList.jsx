@@ -17,6 +17,7 @@ export default function NavList({ items, fontSize = "1rem" }) {
         <li className={styles.navItem} key={item.name}>
           <NavLink
             to={item.to}
+            end={item.end}
             style={({ isActive }) =>
               isActive ? { ...activeLinkStyle, ...baseStyle } : baseStyle
             }
