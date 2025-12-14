@@ -5,6 +5,7 @@ import Home from "./components/pages/home/Home";
 import About from "./components/pages/about/About";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Vans from "./components/pages/vans/Vans";
+import VanDetail from "./components/pages/van-detail/VanDetail";
 
 const queryClient = new QueryClient();
 
@@ -17,6 +18,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
             <Route path="vans" element={<Vans />} />
+            <Route path="vans/:id" element={<VanDetail />} />
           </Route>
         </Routes>
       </BrowserRouter>

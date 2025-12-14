@@ -1,3 +1,5 @@
+@use "/src/scss/utilities";
+
 .van {
   cursor: pointer;
   font-size: 1rem;
@@ -35,7 +37,7 @@
 }
 
 .priceText {
+  @include utilities.font-weight-500;
   font-size: 0.875em;
-  font-weight: 500;
   display: block;
 }

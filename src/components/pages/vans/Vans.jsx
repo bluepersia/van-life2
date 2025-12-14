@@ -78,7 +78,11 @@ export default function Vans() {
           <ul className={styles.vansList}>
             {vans.map((van) => (
               <li key={van.id} className={styles.vanItem}>
-                <Van van={van} />
+                {" "}
+                <Van
+                  van={van}
+                  state={{ search: searchParams.toString(), type: typeFilter }}
+                />
               </li>
             ))}
           </ul>

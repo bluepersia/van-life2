@@ -1,0 +1,51 @@
+@use "/src/scss/utilities";
+
+.vanDetail {
+  @include utilities.container;
+  padding: 2.5rem 0;
+}
+
+.van {
+  margin-top: 2.5rem;
+  max-width: 497px;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  margin-bottom: 3.1rem;
+}
+
+.badge {
+  margin-bottom: 1.25rem;
+}
+
+.name {
+  font-size: 2rem;
+  margin-bottom: 0.6rem;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 0.6rem;
+}
+
+.priceText {
+  @include utilities.font-weight-500;
+  font-size: 1.25rem;
+}
+
+.body {
+  margin-bottom: 1.3rem;
+}
+
+.button {
+  display: block;
+  width: 100%;
+}
+
+.error {
+  @include utilities.error;
+}
