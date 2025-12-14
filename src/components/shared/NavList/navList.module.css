@@ -1,0 +1,18 @@
+.navItem {
+}
+
+.navList {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding-left: 0;
+  gap: 0.81rem;
+}
+
+.navLink {
+  color: rgba(77, 77, 77, 1);
+  text-decoration: none;
+}
+.navLink:hover {
+  text-decoration: underline;
+}
