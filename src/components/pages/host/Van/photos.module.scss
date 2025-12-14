@@ -1,0 +1,10 @@
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photo {
+  width: 100%;
+  display: block;
+  flex-basis: 6.4rem;
+}

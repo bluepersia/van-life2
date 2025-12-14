@@ -1,0 +1,44 @@
+@use "/src/scss//utilities.scss";
+
+.vanDetail {
+  padding: 2.8rem 0;
+  font-size: 1rem;
+}
+
+.van {
+  margin-top: 2.3rem;
+  background-color: white;
+  padding: 1.4rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.img {
+  width: 36%;
+}
+
+.badge {
+  margin-bottom: 1rem;
+}
+
+.name {
+  font-size: 1.6em;
+}
+
+.price {
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+.priceText {
+  @include utilities.font-weight-500;
+  font-size: 1rem;
+}
+
+.nav {
+  padding: 1.6rem 0;
+}

@@ -11,6 +11,10 @@ import Dashboard from "./components/pages/host/Dashboard";
 import Income from "./components/pages/host/Income";
 import HostVans from "./components/pages/host/Vans";
 import Reviews from "./components/pages/host/Reviews";
+import HostVanDetail from "./components/pages/host/Van/VanDetail";
+import HostVanDetails from "./components/pages/host/Van/Details";
+import HostVanPricing from "./components/pages/host/Van/Pricing";
+import HostVanPhotos from "./components/pages/host/Van/Photos";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +32,11 @@ function App() {
               <Route index element={<Dashboard />} />
               <Route path="income" element={<Income />} />
               <Route path="vans" element={<HostVans />} />
+              <Route path="vans/:id" element={<HostVanDetail />}>
+                <Route index element={<HostVanDetails />} />
+                <Route path="pricing" element={<HostVanPricing />} />
+                <Route path="photos" element={<HostVanPhotos />} />
+              </Route>
               <Route path="reviews" element={<Reviews />} />
             </Route>
           </Route>
