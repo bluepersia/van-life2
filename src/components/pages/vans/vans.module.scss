@@ -21,8 +21,8 @@
 
 .optionBtn {
   @include utilities.square-pill;
+  @include utilities.font-weight-500;
   background-color: rgba(255, 234, 208, 1);
-  font-weight: 500;
   font-family: inherit;
   font-size: 1em;
   color: rgba(77, 77, 77, 1);
@@ -70,4 +70,8 @@
 
 .vansContent {
   padding: 3.43rem 0 5.1rem;
+}
+
+.error {
+  @include utilities.error;
 }

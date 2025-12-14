@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import Badge from "../../shared/Badge/Badge";
-import styles from "./van.module.css";
+import styles from "./van.module.scss";
 
-export default function Van({ van }) {
+export default function Van({ van, state }) {
   return (
     <article className={styles.van}>
-      <Link to={`/vans/${van.id}`} className={styles.vanLink}>
+      <Link to={`/vans/${van.id}`} state={state} className={styles.vanLink}>
         <img className={styles.img} alt="" src={van.imageUrl} />
         <div className={styles.content}>
           <div className={styles.contentLeft}>

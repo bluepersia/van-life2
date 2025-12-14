@@ -11,3 +11,11 @@
 @mixin square-pill {
   border-radius: 0.31em;
 }
+
+@mixin error {
+  color: red;
+}
+
+@mixin font-weight-500 {
+  font-weight: 500;
+}
