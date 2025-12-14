@@ -1,9 +1,12 @@
+@use "/src/scss/utilities";
+
 .button {
+  @include utilities.square-pill;
+
   font-family: inherit;
   font-weight: 700;
   padding: 0.72em 1.31em;
   border: none;
-  border-radius: 0.31em;
   cursor: pointer;
   transition: filter 300ms;
   text-decoration: none;

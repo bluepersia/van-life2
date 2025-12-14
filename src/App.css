@@ -6,9 +6,15 @@
   padding: 0;
 }
 
+:root {
+  --color-simple: rgba(225, 118, 84, 1);
+  --color-rugged: rgba(17, 94, 89, 1);
+  --color-luxury: rgba(22, 22, 22, 1);
+}
 body {
   background-color: rgba(255, 247, 237, 1);
   font-family: "Inter", sans-serif;
+  color: rgba(22, 22, 22, 1);
 }
 
 p {
@@ -19,4 +25,16 @@ p {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }

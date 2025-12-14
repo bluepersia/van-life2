@@ -1,4 +1,13 @@
 @mixin container {
-  width: min(90%, 31rem);
+  width: min(90%, 60rem);
   margin: 0 auto;
+}
+
+@mixin reset-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+@mixin square-pill {
+  border-radius: 0.31em;
 }

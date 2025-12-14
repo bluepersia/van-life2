@@ -1,6 +1,6 @@
 import styles from "./about.module.scss";
-import imgSrc from "../../assets/about.png";
-import Button from "../shared/Button/Button";
+import imgSrc from "../../../assets/about.png";
+import Button from "../../shared/Button/Button";
 
 export default function About() {
   return (
