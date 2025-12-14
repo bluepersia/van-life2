@@ -1,0 +1,18 @@
+.button {
+  font-family: inherit;
+  font-weight: 700;
+  padding: 0.72em 1.31em;
+  border: none;
+  border-radius: 0.31em;
+  cursor: pointer;
+  transition: filter 300ms;
+}
+
+.button:hover {
+  filter: brightness(1.1);
+}
+
+.button--orange {
+  background-color: rgba(255, 140, 56, 1);
+  color: white;
+}
