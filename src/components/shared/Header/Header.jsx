@@ -12,6 +12,10 @@ export default function Header() {
         <NavList
           items={[
             {
+              name: "Host",
+              to: "host",
+            },
+            {
               name: "About",
               to: "about",
             },

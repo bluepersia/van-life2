@@ -17,4 +17,8 @@ async function getVan(id) {
   return await get(`/api/vans/${id}`);
 }
 
-export { getVans, getVan };
+async function getHostVans() {
+  return await get("/api/host/vans");
+}
+
+export { getVans, getVan, getHostVans };

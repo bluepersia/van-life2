@@ -1,0 +1,10 @@
+@use "/src/scss/utilities.scss";
+
+.price {
+  @include utilities.font-weight-500;
+  font-size: 1.5rem;
+}
+
+.priceText {
+  font-size: 1rem;
+}
