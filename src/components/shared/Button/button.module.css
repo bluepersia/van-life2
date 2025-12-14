@@ -16,3 +16,8 @@
   background-color: rgba(255, 140, 56, 1);
   color: white;
 }
+
+.button--black {
+  background-color: black;
+  color: white;
+}
