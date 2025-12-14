@@ -1,0 +1,36 @@
+@use "/src/scss/utilities";
+
+.about {
+  font-size: 1rem;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  max-height: 25rem;
+}
+
+.content {
+  @include utilities.container;
+  padding: 3rem 0;
+}
+
+.title {
+  margin-bottom: 2rem;
+  font-size: 2em;
+}
+
+.body {
+  margin-bottom: 3.4rem;
+}
+
+.cta {
+  background-color: rgba(255, 204, 141, 1);
+  padding: 2rem;
+}
+
+.ctaTitle {
+  font-size: 1.5em;
+  margin-bottom: 1.5rem;
+}
