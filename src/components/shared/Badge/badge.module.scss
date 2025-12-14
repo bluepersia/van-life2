@@ -1,0 +1,19 @@
+@use "/src/App.css";
+@use "/src/scss/utilities";
+
+.badge {
+  @include utilities.square-pill;
+
+  padding: 0.4em 0.9em;
+  color: rgba(255, 234, 208, 1);
+}
+.badge--simple {
+  background-color: var(--color-simple);
+}
+
+.badge--luxury {
+  background-color: var(--color-luxury);
+}
+.badge--rugged {
+  background-color: var(--color-rugged);
+}

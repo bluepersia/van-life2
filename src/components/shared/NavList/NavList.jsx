@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { navList, navItem, navLink } from "./navList.module.css";
+import styles from "./navList.module.scss";
 
 const activeLinkStyle = {
   textDecoration: "underline",
@@ -12,15 +12,15 @@ export default function NavList({ items, fontSize = "1rem" }) {
     fontSize,
   };
   return (
-    <ul className={navList}>
+    <ul className={styles.navList}>
       {items.map((item) => (
-        <li className={navItem} key={item.name}>
+        <li className={styles.navItem} key={item.name}>
           <NavLink
             to={item.to}
             style={({ isActive }) =>
               isActive ? { ...activeLinkStyle, ...baseStyle } : baseStyle
             }
-            className={navLink}
+            className={styles.navLink}
           >
             {item.name}
           </NavLink>

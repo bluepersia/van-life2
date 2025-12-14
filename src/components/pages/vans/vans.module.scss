@@ -1,0 +1,73 @@
+@use "/src/scss/utilities";
+@use "/src/App.css";
+
+.vans {
+  @include utilities.container;
+  font-size: 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1.3rem;
+}
+
+.options {
+  @include utilities.reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.optionBtn {
+  @include utilities.square-pill;
+  background-color: rgba(255, 234, 208, 1);
+  font-weight: 500;
+  font-family: inherit;
+  font-size: 1em;
+  color: rgba(77, 77, 77, 1);
+  padding: 0.4em 1.6em;
+  border: none;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.optionBtn:hover {
+  color: white;
+}
+
+.optionBtn--simple:hover {
+  background-color: var(--color-simple);
+}
+
+.optionBtn--rugged:hover {
+  background-color: var(--color-rugged);
+}
+
+.optionBtn--luxury:hover {
+  background-color: var(--color-luxury);
+}
+
+.clearBtn {
+  color: rgba(77, 77, 77, 1);
+  text-decoration: underline;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.vansList {
+  @include utilities.reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.vanItem {
+  flex-basis: 14rem;
+  flex-grow: 1;
+}
+
+.vansContent {
+  padding: 3.43rem 0 5.1rem;
+}

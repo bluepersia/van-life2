@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import styles from "./button.module.css";
+import styles from "./button.module.scss";
 import { Link } from "react-router-dom";
 
 export default function Button({
