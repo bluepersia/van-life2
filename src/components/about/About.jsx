@@ -26,7 +26,9 @@ export default function About() {
             <br />
             Your van is ready.
           </h2>
-          <Button color="black">Explore our vans</Button>
+          <Button color="black" to="/vans">
+            Explore our vans
+          </Button>
         </div>
       </div>
     </main>

@@ -6,6 +6,8 @@
   border-radius: 0.31em;
   cursor: pointer;
   transition: filter 300ms;
+  text-decoration: none;
+  text-align: center;
 }
 
 .button:hover {
